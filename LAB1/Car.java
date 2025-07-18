@@ -6,15 +6,14 @@ public class Car {
         
         System.out.println("Start time: " + LocalTime.now());
 
-// Removed invalid static method definition from here.
         
         
 
         ArrayList<String> types = new ArrayList<>();
         types.add("SUV");
-        types.add("sedan");
-        types.add("Rikshaw");
-        types.add("Truck");
+        types.add("SEDAN");
+        types.add("RIKSHAW");
+        types.add("TRUCK");
 
         ArrayList<String> CCs = new ArrayList<>();
         CCs.add("12000");
@@ -30,9 +29,10 @@ public class Car {
 
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the type of vehicle: ");
-        String vehicleType = sc.nextLine();
+        String vehicleType = sc.nextLine().toUpperCase();
 
         ifElse(vehicleType, CCs, Tyres);
+        // Switch(vehicleType, CCs, Tyres);
 
         long endTime = System.nanoTime();
         System.out.println("End time: " + LocalTime.now());
