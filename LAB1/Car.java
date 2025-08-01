@@ -72,4 +72,5 @@ public class Car {
                 System.out.println("Vehicle type not found.");
         }
     }
+    
 }

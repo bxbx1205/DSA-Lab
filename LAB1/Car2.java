@@ -21,6 +21,7 @@ public class Car2 {
         } else {
             System.out.println("Vehicle type not found.");
         }
+        sc.close();
 
     }
 }
