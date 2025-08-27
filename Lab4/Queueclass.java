@@ -19,7 +19,7 @@ public class Queueclass {
         System.out.println("Enqueued: " + data);
     }
 
-    public void deque() {
+    public void deque() {   
         if ((f == -1 && r==-1) || f > r) {
             System.out.println("Underflow condition");
             return;
@@ -51,14 +51,13 @@ public class Queueclass {
         Queueclass q = new Queueclass();
         q.enque(12);
         q.enque(123);
-        q.enque(14);
-        q.enque(15);
-        q.enque(123);
-        q.enque(12); 
+        q.enque(1234);
+        q.enque(12345);
+        q.enque(123456);
+        q.enque(1234567); 
         q.printarray();
 
         q.deque();
-        // q.deque();
         q.deque();
         q.deque();
         q.deque();
@@ -68,6 +67,5 @@ public class Queueclass {
         q.printarray();
 
           
-        q.printarray();
     }
 }
