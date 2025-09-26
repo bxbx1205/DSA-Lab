@@ -1,4 +1,4 @@
-package CircularQueue;
+package Lab4;
 
 public class circularQueue {
     
